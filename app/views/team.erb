@@ -4,9 +4,9 @@
 <h1><%= @team[:name]%></h1>
 <h2><%= @team[:motto]%></h2>
 <ul>
-<%= @heroes.each do |hero| %>
+<% @heroes.each do |hero| %>
   <h3>Hero Name: <%=hero[:name] %></h3>
   <h5>Hero Power: <%=hero[:power] %></h5>
   <p>Hero Bio: <%= hero[:bio] %></p>
-<%= end %>
+<% end %>
 </ul>
