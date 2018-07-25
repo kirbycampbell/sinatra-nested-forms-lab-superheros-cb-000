@@ -3,3 +3,10 @@
 
 <h1><%= @team[:name]%></h1>
 <h2><%= @team[:motto]%></h2>
+<ul>
+<%= @heroes.each do |hero| %>
+  <h3><%=hero[:name]%></h3>
+  <h5><%=hero[:power]%></h5>
+  <p><%=hero[:bio]%></p>
+<%= end %>
+</ul>
